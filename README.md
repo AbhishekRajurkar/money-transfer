@@ -3,7 +3,12 @@ Technologies
 JAX-RS API
 Jetty Container (for Test and Demo app)
 
+How to Build 
+
+mvn clean install
+
 How to run
+
 mvn exec:java
 
 Application starts a jetty server on localhost port 8080; In- memory Data Store- Hash Map is used. Map stores values as Account Id(long) and Account object.
