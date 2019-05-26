@@ -30,7 +30,7 @@ int serverPort = 8080;
             output.flush();
             exchange.close();
         }));
-        server.setExecutor(null); // creates a default executor
+        server.setExecutor(null);
         server.start();
 
 Application initializes with some test data in the Map. 
