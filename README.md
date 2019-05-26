@@ -10,9 +10,11 @@ Application starts a jetty server on localhost port 8080; In- memory Data Store-
 
 This is the minimlistic implemetation. There is a potential downside on performance in using Map as Data - store As it needs to be locked for atomicity. 
 Other approach could be to use H2 as in- memory DS. But i decided against it as it would add little more complexity around connections, managing transactions and controlling commits.
+
 Application initializes with some test data in the Map. 
 
 Example PUT API - 
+
 curl -H "Content-Type: application/json" -X PUT -d '{"amount":10,"fromAccountId":123,"toAccountId":124}' http://localhost:8080/transfer
 
 Http Status
